@@ -1,6 +1,9 @@
 var Sök_bar = document.getElementById("Sök_bar")
 var Resultat_div = document.getElementById("Resultat_div")
 
+var Lista_av_blumhouse_filmer = []
+var Lista_av_Titlar_resultat = []
+
 Sök_bar.onkeydown = async function(event){
     if (event.key === "Enter"){
         event.preventDefault()
@@ -16,13 +19,22 @@ Sök_bar.onkeydown = async function(event){
         }
         
         async function Create_results(Resultat){
+          Resultat_div.innerHTML = ''; //Ser till att de tidgare sökta resultaten försvinner från resultat_diven
           for(let object = 0; object <= 4; object++){
-            console.log(Resultat[object])
             let imageUrl = 'https://image.tmdb.org/t/p/w500' + Resultat[object].poster_path;
             
-            console.log(imageUrl)
-            Resultat_div.insertAdjacentHTML('beforeend','<div id="Titlar_resultat">' + '<img src=' + imageUrl +  ' id="Resultat_bilder">' + Resultat[object].original_title + Resultat[object].release_date + "</div>")
+            Resultat_div.insertAdjacentHTML('beforeend', `<div class="Titlar_resultat" id="${Resultat[object]}"><img src="${imageUrl}" id="Resultat_bilder"><div><h4>Movie Title:</h4>${Resultat[object].original_title}</div><div><h4>Release Date:</h4>${Resultat[object].release_date}</div></div>`);
+            var Titlar_Resultat = (document.getElementById(`${Resultat[object]}`))
+            Lista_av_Titlar_resultat.push(Titlar_Resultat)
+          }
+           Lista_av_Titlar_resultat[0].onclick = function(){ //Ser ifall den första titeln är tryckt
+            console.log("tryckt")
           }
         }
     }
 }
+
+
+
+
+

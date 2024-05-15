@@ -32,17 +32,23 @@ body{
     background-image: linear-gradient(rgb(89, 55, 55),rgb(72, 72, 72),rgb(72, 72, 72), rgb(89, 55, 55));
 }
 
-#Titlar_resultat{
+.Titlar_resultat{
     border: 2px solid black;
     margin: 2%;
     padding: 7%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5vh;
 }
 
 #Resultat_bilder{
     float: left;
-    margin-top: -7%;
-    width: 12%;
-    height: 12%;
+    margin-bottom: -10%;
+    margin-top: -5%;
+    margin-left: -12%;
+    width: 16%;
+    height: 16%;
+    border: 0.5px black solid;
 }
 
 
