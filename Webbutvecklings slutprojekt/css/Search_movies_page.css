@@ -41,6 +41,11 @@ body{
     font-size: 2.5vh;
 }
 
+.Titlar_resultat:hover{
+    background-color: rgb(119, 119, 119);
+}
+
+
 #Resultat_bilder{
     float: left;
     margin-bottom: -10%;
@@ -49,6 +54,24 @@ body{
     width: 16%;
     height: 16%;
     border: 0.5px black solid;
+}
+
+#Information_bild_bredvid_text{
+    width: 70%;
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+#Information_om_titel_bakgrund{
+    background-color: rgb(145, 145, 145);
+    display: flex;
+}
+
+.Information_text_om_titel{
+   margin-right: 20%;
+   font-size: 2.5vh;
+   width: 100%;
 }
 
 
