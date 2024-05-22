@@ -17,8 +17,9 @@
     text-align: center;
     background-color: rgb(145, 145, 145);
     padding-top: 1%;
-    margin-right: 25%;
-    margin-left: 25%;
+    padding-bottom: 1%;
+    margin-right: 22%;
+    margin-left: 22%;
     filter: blur(100%);
 }
 
@@ -29,7 +30,9 @@
 
 
 body{
-    background-image: linear-gradient(rgb(89, 55, 55),rgb(72, 72, 72),rgb(72, 72, 72), rgb(89, 55, 55));
+    background-image: linear-gradient( rgb(66, 66, 66),rgb(72, 72, 72),rgb(72, 72, 72), rgb(89, 55, 55));
+    background-repeat: repeat-y;
+    height: 100%;
 }
 
 .Titlar_resultat{
@@ -38,7 +41,6 @@ body{
     padding: 7%;
     display: flex;
     justify-content: space-around;
-    font-size: 2.5vh;
 }
 
 .Titlar_resultat:hover{
@@ -54,32 +56,43 @@ body{
     width: 16%;
     height: 16%;
     border: 0.5px black solid;
+    white-space: pre;
 }
 
 #Information_bild_bredvid_text{
     width: 70%;
     float: left;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    margin: 5%;
+    border: 1px;
 }
 
 #Information_om_titel_bakgrund{
-    background-color: rgb(145, 145, 145);
+    margin-top: 5%;
+    background-color: rgb(159, 159, 159);
     display: flex;
 }
 
 .Information_text_om_titel{
    margin-right: 20%;
-   font-size: 2.5vh;
    width: 100%;
 }
 
-
-@media screen and (min-width:700px){
-    .Info_text{font-size: 140%; margin-left: 35%;}
+@media screen and (max-width:500px){
+    .Info_text{font-size: 90%; margin-left: 28%;}
+    .Titlar_resultat{font-size: 0.55vh;}
+    .Information_text_om_titel{font-size: 0.65vh;}
 }
 
 
-@media screen and (max-width:700px){
+@media screen and (min-width:500px){
     .Info_text{font-size: 90%; margin-left: 28%;}
+    .Titlar_resultat{font-size: 1.25vh;}
+    .Information_text_om_titel{font-size: 1.6vh;}
+}
+
+
+@media screen and (min-width:800px){
+    .Info_text{font-size: 140%; margin-left: 35%;}
+    .Titlar_resultat{font-size: 2.5vh;}
+    .Information_text_om_titel{font-size: 2.5vh;}
 }
