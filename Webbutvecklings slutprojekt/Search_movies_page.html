@@ -13,55 +13,56 @@
 
 <header  id="Top_meny">
   <div class="centrerad"> <!--Endast centrerard när max-width är under 700-->
-   <img src="Images/BlumHouse_logo.png" alt="Blumhouse Production logo" id="Blumhouse_logo" loading="lazy">
+    <img src="Images/BlumHouse_logo.png" alt="Blumhouse Production logo" class="Blumhouse_logo" loading="lazy">
   </div>
-  <div class="Top_meny Meny_länkar">
-    <div id="Home_page" class="Övre_länk">
-    <h3>Home</h3>
+  <nav class="Top_meny Meny_länkar">
+    <div id="Home_page_link" class="Övre_länk">
+      <h3>Home</h3>
    </div>
-   <div id="Search_movies_page" class="Övre_länk">
-    <h3>Search</h3>
-    <h3>Movies</h3>
+   <div id="Search_movies_page_link" class="Övre_länk">
+      <h3>Search</h3>
+      <h3>Movies</h3>
    </div>
-   <div id="Contact_information_page" class="Övre_länk">
-    <h3>Contact</h3>
-    <h3>Information</h3>
+   <div id="Contact_information_page_link" class="Övre_länk">
+      <h3>Contact</h3>
+      <h3>Information</h3>
    </div>
-  </div>
- <div id="Undre_gradient_meny"></div>
+  </nav>
+  <div id="Undre_gradient_meny"></div>
 </header>
 
 <main>
   <img src="Images/Spiderweb.webp" alt="Spindelväv" id="Spindelväv_bild">
-    <div class="Info_text">
+    <section class="Info_text">
       <p>Search here for your favorite</p>
       <h4>Blumhouse scary Movie</h4>
-    </div>
+    </section>
 
-    <div id="Bakgrund_av_sök_fält">
+    <section id="Bakgrund_av_sök_fält">
         <div>
              <i class="fa-solid fa-magnifying-glass"></i><input type="text" id="Sök_bar" name="Search_bar" placeholder= "Sök här!">
              <p class="Sökfält_info_taggar">Results are based on popularity</p>
         </div>
         <div id="Resultat_div"></div>
-    </div>
+    </section>
 </main>
 
 <footer>
   <div id="Footer_bakgrund">
-    <img src="Images/BlumHouse_logo.png" alt="Blumhouse Production logo" id="Blumhouse_logo" loading="lazy">
+    <img src="Images/BlumHouse_logo.png" alt="Blumhouse Production logo" class="Blumhouse_logo" loading="lazy">
     <div id="Följ_blumhouse_div">
       <div>Follow Blumhouse productions</div>
       <hr>
-      <div id="Media_icons_div">
+      <nav id="Media_icons_div">
         <div class="Media_Länk"> <a class="Media_Länk" href="https://www.instagram.com/blumhouse/"><i class="fa-brands fa-instagram"></i></a> </div> 
         <div class="Media_Länk"> <a class="Media_Länk" href="https://x.com/blumhouse?mx=2"><i class="fa-brands fa-x-twitter"></i></a> </div> 
         <div class="Media_Länk"> <a class="Media_Länk" href="https://www.youtube.com/channel/UCCEfOHkckMXnoZQAjUZsMig"><i class="fa-brands fa-youtube"></i></a> </div> 
         <div class="Media_Länk"> <a class="Media_Länk" href="https://www.facebook.com/Blumhouse/"><i class="fa-brands fa-facebook"></i></a> </div> 
-      </div>
+      </nav>
     </div>
   </div>
 </footer>
+
 <script src="Search_movies.js"></script>
 <script src="Top_meny.js"></script>
 </body>

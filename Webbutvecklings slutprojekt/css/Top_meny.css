@@ -16,7 +16,7 @@
     height: 15svh;
 }
 
-#Home_page{
+#Home_page_link{
     border: 2%, solid,;
     margin-top: 6%;
     padding-top: 2%;
@@ -25,7 +25,7 @@
     background-color:  rgb(145, 145, 145);
 }
 
-#Search_movies_page{
+#Search_movies_page_link{
     border: 2%, solid,;
     margin-top: 6%;
     padding-left: 6%;
@@ -33,7 +33,7 @@
     background-color:  rgb(145, 145, 145);
 }
 
-#Contact_information_page{
+#Contact_information_page_link{
     border: 2%, solid,;
     margin-top: 6%;
     padding-left: 6.5%;
@@ -47,6 +47,14 @@
     animation-fill-mode: forwards;
 }
 
+
+
+body{
+    background-image: linear-gradient( rgb(66, 66, 66),rgb(72, 72, 72),rgb(72, 72, 72), rgb(89, 55, 55));
+    background-repeat: repeat-y;
+    height: 100%;
+}
+
 @keyframes Övre_länkar_animation{
     from{background-color: rgb(145, 145, 145);transform: scale(1);}
     to {background-color:  rgb(135, 135, 135);transform: scale(1.04)}
@@ -54,7 +62,7 @@
 }
 
 @media screen and (min-width:700px){
-    #Blumhouse_logo{
+    .Blumhouse_logo{
         width: 25%;
         height:15%;
         margin: 4%;
@@ -71,7 +79,7 @@
 }   
 
 @media screen and (max-width:700px){
-    #Blumhouse_logo{
+    .Blumhouse_logo{
         width: 30%;
         height:10%;
         margin: 4%;

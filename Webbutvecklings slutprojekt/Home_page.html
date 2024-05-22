@@ -5,27 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/Top_meny.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/Home_page.css">
+    <script src="https://kit.fontawesome.com/92d4fc8020.js" crossorigin="anonymous"></script>  
 </head>
 <body>
-<header  id="Top_meny">
+<header id="Top_meny">
+
+
   <div class="centrerad"> <!--Endast centrerard när max-width är under 700-->
-   <img src="Images/BlumHouse_logo.png" alt="Blumhouse Production logo" id="Blumhouse_logo" loading="lazy">
+   <img src="Images/BlumHouse_logo.png" alt="Blumhouse Production logo" class="Blumhouse_logo" loading="lazy">
   </div>
   <div class="Top_meny Meny_länkar">
-    <div id="Home_page" class="Övre_länk">
+    <div id="Home_page_link" class="Övre_länk">
     <h3>Home</h3>
    </div>
-   <div id="Search_movies_page" class="Övre_länk">
+   <div id="Search_movies_page_link" class="Övre_länk">
     <h3>Search</h3>
     <h3>Movies</h3>
    </div>
-   <div id="Contact_information_page" class="Övre_länk">
+   <div id="Contact_information_page_link" class="Övre_länk">
     <h3>Contact</h3>
     <h3>Information</h3>
    </div>
   </div>
  <div id="Undre_gradient_meny"></div>
 </header>
+
+<main id="Main_sektion_home_page">
+  <section id="Movie_information">
+    <table>
+      <thead>
+        <tr>
+          <th class="tabell_rad understryk">Famous Movies</th>
+          <th class="tabell_rad understryk">Release date</th>
+          <th class="tabell_rad understryk">Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tabell_rad">Five night's at Freddy's</td>
+          <td class="tabell_rad">2023-10-25</td>
+          <td class="tabell_rad">8/10</td>
+        </tr>
+        <tr>
+          <td class="tabell_rad">The Purge</td>
+          <td class="tabell_rad">2013-05-31</td>
+          <td class="tabell_rad">7/10</td>
+        </tr>
+        <tr>
+          <td class="tabell_rad">Halloween Ends</td>
+          <td class="tabell_rad">2022-10-12</td>
+          <td class="tabell_rad">7/10</td>
+        </tr>
+        <tr>
+          <td class="tabell_rad">Paranormal Activity</td>
+          <td class="tabell_rad">2007-09-14</td>
+          <td class="tabell_rad">6/10</td>
+        </tr>
+        <tr>
+          <td class="tabell_rad">The Gallows</td>
+          <td class="tabell_rad">2015-07-09</td>
+          <td class="tabell_rad">5/10</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr class="tabell_rad">
+          <td class="låg_opacity">Mer Kommer!</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <section id="Bild_lista">
+    <ol>
+      <li><img src="Images/Get_out_poster.jpg" alt="Movie Poster of Get Out" class="Film_posters" loading="lazy"></li>
+      <li><img src="Images/M3GAN_poster.jpg" alt="Movie Poster of M3GAN" class="Film_posters" loading="lazy"></li>
+      <li><img src="Images/The_black_phone_poster.jpg" alt="Movie Poster of The Black Phone" class="Film_posters" loading="lazy"></li>
+    </ol>
+  </section>
+
+</main>
+<footer>
+    <div id="Footer_bakgrund">
+      <img src="Images/BlumHouse_logo.png" alt="Blumhouse Production logo" class="Blumhouse_logo" loading="lazy">
+      <div id="Följ_blumhouse_div">
+        <div>Follow Blumhouse productions</div>
+        <hr>
+        <nav id="Media_icons_div">
+          <div class="Media_Länk"> <a class="Media_Länk" href="https://www.instagram.com/blumhouse/"><i class="fa-brands fa-instagram"></i></a> </div> 
+          <div class="Media_Länk"> <a class="Media_Länk" href="https://x.com/blumhouse?mx=2"><i class="fa-brands fa-x-twitter"></i></a> </div> 
+          <div class="Media_Länk"> <a class="Media_Länk" href="https://www.youtube.com/channel/UCCEfOHkckMXnoZQAjUZsMig"><i class="fa-brands fa-youtube"></i></a> </div> 
+          <div class="Media_Länk"> <a class="Media_Länk" href="https://www.facebook.com/Blumhouse/"><i class="fa-brands fa-facebook"></i></a> </div> 
+        </nav>
+      </div>
+    </div>
+</footer>
 <script src="Top_meny.js"></script>
 </body>
 </html>

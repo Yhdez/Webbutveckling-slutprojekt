@@ -1,0 +1,33 @@
+#Movie_information{
+    background-color: rgb(145, 145, 145);
+    margin: 5%;
+    font-size: 1.5svw;
+    box-shadow: 8px 8px;
+}
+
+#Bild_lista{
+    float: right;
+
+}
+
+.tabell_rad{
+    outline: 2px solid black;
+}
+
+.understryk{
+    font-weight: bold;
+}
+
+#Main_sektion_home_page{
+    display: flex;
+    align-content: space-around;
+}
+
+.Film_posters{
+    width: 20%;
+    margin: 5%;
+}
+
+.låg_opacity{
+    opacity: 50%;
+}

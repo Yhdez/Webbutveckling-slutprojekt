@@ -1,6 +1,6 @@
-var Home_page = document.getElementById("Home_page")
-var Search_movies_page = document.getElementById("Search_movies_page")
-var Contact_information_page = document.getElementById("Contact_information_page")
+var Home_page = document.getElementById("Home_page_link")
+var Search_movies_page = document.getElementById("Search_movies_page_link")
+var Contact_information_page = document.getElementById("Contact_information_page_link")
 
 Search_movies_page.onclick = function(){
     window.open("Search_movies_page.html","_self")
@@ -8,4 +8,9 @@ Search_movies_page.onclick = function(){
 
 Home_page.onclick = function(){
     window.open("Home_page.html","_self")
+}
+
+
+Contact_information_page.onclick = function(){
+    window.open("Contact_information_page.html","_self")
 }
