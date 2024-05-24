@@ -3,6 +3,7 @@
     margin: 5%;
     font-size: 1.5svw;
     box-shadow: 8px 8px;
+    width: 17.5%;
 }
 
 #Bild_lista{
@@ -20,12 +21,16 @@
 
 #Main_sektion_home_page{
     display: flex;
-    align-content: space-around;
+    flex-direction: row;
+    align-items: self-start;
 }
 
 .Film_posters{
-    width: 20%;
-    margin: 5%;
+    border: 2px solid black;
+    border-radius: 20%;
+    width: 12%;
+    margin-top: 20%;
+    margin-bottom: -8%;
 }
 
 .låg_opacity{

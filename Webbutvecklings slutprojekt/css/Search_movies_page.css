@@ -33,7 +33,7 @@
     margin: 2%;
     padding: 7%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .Titlar_resultat:hover{
@@ -42,19 +42,15 @@
 
 
 #Resultat_bilder{
-    float: left;
     margin-bottom: -10%;
-    margin-top: -5%;
-    margin-left: -12%;
-    width: 16%;
-    height: 16%;
+    margin-left: -2%;
     border: 0.5px black solid;
     white-space: pre;
 }
 
 #Information_bild_bredvid_text{
     width: 70%;
-    float: left;
+    left: 10%;
     margin: 5%;
     border: 1px;
 }
@@ -72,20 +68,23 @@
 
 @media screen and (max-width:500px){
     .Info_text{font-size: 90%; margin-left: 28%;}
-    .Titlar_resultat{font-size: 0.55vh;}
-    .Information_text_om_titel{font-size: 0.65vh;}
+    .Titlar_resultat{font-size: 1.2vw;}
+    .Information_text_om_titel{font-size: 1vw;}
+    #Resultat_bilder{margin-top: -5%; height: 11%; width: 11%;}
 }
 
 
 @media screen and (min-width:500px){
     .Info_text{font-size: 90%; margin-left: 28%;}
-    .Titlar_resultat{font-size: 1.25vh;}
-    .Information_text_om_titel{font-size: 1.6vh;}
+    .Titlar_resultat{font-size: 1.4vw;}
+    .Information_text_om_titel{font-size: 1.2vw;}
+    #Resultat_bilder{margin-top: -3.5%; height: 13%; width: 13%;}
 }
 
 
 @media screen and (min-width:800px){
     .Info_text{font-size: 140%; margin-left: 35%;}
-    .Titlar_resultat{font-size: 2.5vh;}
-    .Information_text_om_titel{font-size: 2.5vh;}
+    .Titlar_resultat{font-size: 1.5vw;}
+    .Information_text_om_titel{font-size: 1.2vw;}
+    #Resultat_bilder{margin-top: -4.5%;height: 16%; width: 16%;}
 }
