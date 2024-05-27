@@ -38,6 +38,7 @@
 
 .Titlar_resultat:hover{
     background-color: rgb(119, 119, 119);
+    transform: scale(1.015);
 }
 
 
@@ -69,8 +70,9 @@
 @media screen and (max-width:500px){
     .Info_text{font-size: 90%; margin-left: 28%;}
     .Titlar_resultat{font-size: 1.2vw;}
-    .Information_text_om_titel{font-size: 1vw;}
+    .Information_text_om_titel{font-size: 1.5vw;}
     #Resultat_bilder{margin-top: -5%; height: 11%; width: 11%;}
+    #Main_sektion_Search_Movies_page{margin-bottom: 52%;}
 }
 
 

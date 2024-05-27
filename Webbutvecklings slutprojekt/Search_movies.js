@@ -19,7 +19,7 @@ Sök_bar.onkeydown = async function(event){
     if (event.key === "Enter"){
         event.preventDefault()
 
-        var Resultat = await sök_efter_film(Sök_bar.value)
+        let Resultat = await sök_efter_film(Sök_bar.value)
         await Create_results(Resultat.results)
         async function sök_efter_film(Film_sökt){
             let url = `https://api.themoviedb.org/3/search/movie?query=${Film_sökt}&api_key=d88a50faae8d9ba506d9df81d76f1c63`
@@ -40,7 +40,7 @@ Sök_bar.onkeydown = async function(event){
             }
           }
           if (Resultat_div.innerHTML === ''){
-            Resultat_div.insertAdjacentHTML(`beforeend`,`<div class="Titlar_resultat"><div><h3>Sorry but we were unable to find any titles with that name...</h3></div></div>`)
+            Resultat_div.insertAdjacentHTML(`beforeend`,`<div class="Titlar_resultat"><div><h3>Sorry but we were unable to find any titles with the name ${Sök_bar.value}...</h3></div></div>`)
           }
           } 
     }

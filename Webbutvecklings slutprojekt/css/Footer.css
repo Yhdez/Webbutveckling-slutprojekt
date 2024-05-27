@@ -3,8 +3,6 @@
     margin-top: 12%;
     padding-bottom: 1%;
     margin-bottom: -10%;
-    margin-left: -0.6%;
-    margin-right: -0.6%;
     bottom: 0px;
     display: flex;
     align-content: center;
@@ -35,19 +33,11 @@ hr{
         margin-top: 5%;
         margin-left: 42%;
     }
-    #Footer_bakgrund{
-        margin-left: -0.6%;
-        margin-right: -0.6%;
-    }
 }
 
 @media screen and (max-width:850px){
     #Följ_blumhouse_div{
         margin-top: 3.5%;
         margin-left: 15%;
-    }
-    #Footer_bakgrund{
-        margin-left: -1%;
-        margin-right: -1%;
     }
 }

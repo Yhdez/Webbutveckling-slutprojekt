@@ -6,6 +6,7 @@
     <title>Blumhouse Info</title>
     <link rel="stylesheet" href="css/Top_meny.css">
     <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/Contact_information_page.css">
     <script src="https://kit.fontawesome.com/92d4fc8020.js" crossorigin="anonymous"></script>  
 </head>
 <body>
@@ -29,8 +30,25 @@
  <div id="Undre_gradient_meny"></div>
 </header>
 
-<main>
-
+<main id="Main_sektion_Contact_information_page" class="Sido_text">
+  <h2>Send an Email</h2>
+  <h2>To the Creator of this Page</h2>
+  <form id="contactForm">
+    <label for="namn av sändare">Full Name</label>
+    <br>
+    <input type="text" placeholder="Your full name.." id="Namn_av_sändare" class="Sido_text" required>
+    <br>
+    <label for="Email av sändare">Email</label>
+    <br>
+    <input type="email" placeholder="Your Email.." id="Email_av_sändare" class="Sido_text" required>
+    <br>
+    <label for="Kommentar av sändare">Write a Comment</label>
+    <br>
+    <textarea cols="40" rows="10" placeholder="Write Something.." id="Text_av_sändare" class="Sido_text" required></textarea>
+    <br>
+    <input type="submit" value="Send" class="Sido_text">
+    </form>
+  </form>
   
 </main>
 
@@ -50,5 +68,6 @@
     </div>
 </footer>
 <script src="Top_meny.js"></script>
+<script src="Contact_information.js"></script>
 </body>
 </html>
