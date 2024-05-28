@@ -1,4 +1,12 @@
-#Top_meny{
+
+body{ /*Detta är sidans fullständiga body, då top_meny.css är aktiv för alla html filer används dessa attributer på alla sidor*/
+    background-image: linear-gradient( rgb(44, 44, 44),rgb(39, 39, 39),rgb(51, 39, 39), rgb(93, 54, 54));
+    margin: 0; /*För att se till att både footern och headern täcker hela bredden av fönstret*/
+    display: flex;
+    flex-direction: column;
+}
+
+#Top_meny{ /*Detta är den fullständiga top_menyn och */
     background-color: rgb(155, 155, 155);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: none;
@@ -7,64 +15,51 @@
 .Meny_länkar{
     display: flex;
     justify-content: space-evenly;
-
 }
 
-#Undre_gradient_meny{
+#Undre_gradient_meny{ /*Detta är en div som befinner sig under top menyns länkar och logo, denna är tänkt att göra en snygg övergång från header till main*/
     background-color: rgb(155, 155, 155);
     background-image: linear-gradient(rgb(155, 155, 155),rgb(37, 37, 37));
     height: 15svh;
 }
 
+/*Dessa id är top menyns individuella id som ger specifika attributer till de enstaka*/
 #Home_page_link{
-    border: 2%, solid,;
-    margin-top: 6%;
     padding-top: 2%;
     padding-left: 8%;
     padding-right: 8%;
-    background-color:  rgb(145, 145, 145);
 }
 
 #Search_movies_page_link{
-    border: 2%, solid,;
-    margin-top: 6%;
     padding-left: 6%;
     padding-right: 6%;
-    background-color:  rgb(145, 145, 145);
 }
 
 #Contact_information_page_link{
-    border: 2%, solid,;
-    margin-top: 6%;
+    padding-top: 2%;
     padding-left: 6.5%;
     padding-right: 6.5%;
-    background-color: rgb(145, 145, 145);
 }
 
 .Övre_länk:hover{
     animation-name: Övre_länkar_animation;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    cursor: pointer; /*Då länkarna bara länkar till html filen inom javascript behövs denna kod för att muspekaren ska indikera att den går att trycka*/
 }
 
-
-
-body{
-    background-image: linear-gradient( rgb(44, 44, 44),rgb(39, 39, 39),rgb(51, 39, 39), rgb(93, 54, 54));
-    background-repeat: repeat;
-    height: 200%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+.Övre_länk{
+    margin-top: 6%;
+    background-color:  rgb(145, 145, 145);
 }
 
-@keyframes Övre_länkar_animation{
+@keyframes Övre_länkar_animation{ /*Detta är en animation som kallas när muspekaren är över länkarna i top menyn*/
     from{background-color: rgb(145, 145, 145);transform: scale(1);}
-    to {background-color:  rgb(135, 135, 135);transform: scale(1.04)}
+    to {background-color:  rgb(135, 135, 135);transform: scale(1.04)} /*Ändrar bakgrundsfärgen och gör den lite större*/
     to {background-color:  rgb(125, 125, 125);transform: scale(1.08)}
 }
 
-@media screen and (min-width:700px){
+@media screen and (min-width:700px){ /*När skrämbredden är över 700px*/
     .Blumhouse_logo{
         width: 25%;
         height:15%;
@@ -79,7 +74,7 @@ body{
     
 }   
 
-@media screen and (max-width:700px){
+@media screen and (max-width:700px){ /*När skrämbredden är under 700px*/
     .Blumhouse_logo{
         width: 30%;
         height:10%;
@@ -88,6 +83,6 @@ body{
     #Top_meny{
         font-size: 70%;
     }
-    .centrerad{text-align: center;}
-    .Övre_länk{border-radius: 100%;}
+    .centrerad{text-align: center;} /*Används för att ändra utseendet av sidans meny när skärmbredden är liten, då blumhouse logon hamnar över länkarna och i mitten*/
+    .Övre_länk{border-radius: 100%;} /*Top menyns länkar blir cirklar istället för rektanglar*/
 }

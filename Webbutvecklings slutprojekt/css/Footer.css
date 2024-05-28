@@ -1,4 +1,4 @@
-#Footer_bakgrund{
+#Footer_bakgrund{ /*Detta är den fullständiga footern, den understa delen av sidan*/
     background-color: rgb(83, 50, 50);
     margin-top: 12%;
     padding-bottom: 1%;
@@ -9,19 +9,17 @@
     margin-top: 20%;
 }
 
-#Media_icons_div{
-    font-size: 2.5svw;
+#Media_icons_div{ /*Div med font awesome ikonerna som länkar till blumhouse egna sociala medier*/
     display: flex;
     flex-direction: row;
-    width: 100%;
 }
 
-.Media_Länk{
+.Media_Länk{ /*De individuella attributerna av footerns ikoner*/
     color: black;
     margin-right: 10%;
 }
 
-hr{
+hr{ /*Detta är för att göra linjen svart istället för den orginella färgen vit*/
     background-color: black;
     border: none;
     height: 1%;
@@ -33,6 +31,7 @@ hr{
         margin-top: 5%;
         margin-left: 42%;
     }
+    #Media_icons_div{font-size: 2.5svw;}
 }
 
 @media screen and (max-width:850px){
@@ -40,4 +39,6 @@ hr{
         margin-top: 3.5%;
         margin-left: 15%;
     }
+    #Media_icons_div{font-size: 5svw;} /*Då media ikonerna behöver att kunna vara klickbara vid låg skärmbredd har de en hög font-size*/
+    
 }

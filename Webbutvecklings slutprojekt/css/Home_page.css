@@ -1,43 +1,80 @@
-#Movie_information{
-    background-color: rgb(145, 145, 145);
-    margin: 5%;
-    font-size: 1.5svw;
-    box-shadow: 8px 8px;
-    margin-right: 10%;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*Import av font Bebas Neue*/
+
+/*Sidan Hero---------------------------*/
+
+#Övre_sektion_home_page{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+#Home_page_Search_movies_link{ /*Denna motsvarar Home_page knappen som omdirigerar användaren till Search_movies.html*/
+    width: 14%;
+    height: 10%;
+    background-color:  rgb(106, 50, 50);
+    border-radius: 25%;
+    text-decoration: none;
+    color: white;
+    box-shadow: 5px 5px black;
+}
+
+#Home_page_Search_movies_link:hover{
+    transform: scale(1.05);
+    background-color: brown;
+    cursor: pointer;
+}
+
+/*Dessa klasser motsvarar olika storlekar och attributer som olika delar av Home_page behöver ha, mest uttnyjtas detta i "Hero" delen (Övre_sektionen*/
+
+.Home_page_rubrik{
+    font-size: 5vw;
+    margin-top: -2%;
+}
+
+.Home_page_liten_text{font-size: 1vw;}
+
+.Home_page_medium_text{font-size: 1.75vw; margin-top: -2%;}
+
+/*Sidans udre del med information om filmtitlar------------------------*/
+
+#Undre_sektion_home_page{
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
 }
 
 #Bild_lista{
+    color: white;
     left: 10%;
     margin-left: 20%;
+}
 
+.Film_posters{
+    border: 2px solid black;
+    width: 25%;
+    margin-top: 15%;
+    margin-bottom: -2%;
+    border-radius: 20%;
 }
 
 .tabell_rad{
     outline: 2px solid black;
 }
 
-.understryk{
+#Movie_information_tabell{
+    background-color: rgb(145, 145, 145);
+    margin: 0;
+    font-size: 1.5svw;
+    box-shadow: 8px 8px;
+    margin-right: 20%;
+}
+
+.understryk{ /*Används för theads th för att göra den överste texten bold*/
     font-weight: bold;
 }
 
-#Main_sektion_home_page{
-    display: flex;
-    flex-direction: row;
-    align-items: first baseline;
-}
-
-.Film_posters{
-    border: 2px solid black;
-    border-radius: 20%;
-    width: 20%;
-    margin-top: 15%;
-    margin-bottom: -2%;
-}
-
-.låg_opacity{
+.låg_opacity{ /*Används i tfoot för att göra den sista raden speciell, i detta fall halvt transparent*/
     opacity: 50%;
-}
-
-@media screen and (max-width:500px){
-    #Main_sektion_home_page{margin-bottom: 30%;}
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blumhouse Info</title>
+    <link rel="icon" type="image/x-icon" href="Images/Favicon.ico">
     <link rel="stylesheet" href="css/Top_meny.css">
     <link rel="stylesheet" href="css/Search_movies_page.css">
     <link rel="stylesheet" href="css/Footer.css">
@@ -15,33 +16,35 @@
   <div class="centrerad"> <!--Endast centrerard när max-width är under 700-->
     <img src="Images/BlumHouse_logo.png" alt="Blumhouse Production logo" class="Blumhouse_logo" loading="lazy">
   </div>
-  <nav class="Top_meny Meny_länkar">
-    <div id="Home_page_link" class="Övre_länk">
+
+  <nav class="Top_meny Meny_länkar"> 
+    <div id="Home_page_link" class="Övre_länk"> <!--Ansvarar för Home knappen som finns i top meny'n, öppnar Home_page.html-->
       <h3>Home</h3>
-   </div>
-   <div id="Search_movies_page_link" class="Övre_länk">
+    </div>
+   <div id="Search_movies_page_link" class="Övre_länk"> <!--Ansvarar för Search Movies knappen som finns i top meny'n, öppnar Search_movies_page.html-->
       <h3>Search</h3>
       <h3>Movies</h3>
    </div>
-   <div id="Contact_information_page_link" class="Övre_länk">
+   <div id="Contact_information_page_link" class="Övre_länk"> <!--Ansvarar för Contact knappen som finns i top meny'n, öppnar Contact_information_page.html-->
       <h3>Contact</h3>
-      <h3>Information</h3>
    </div>
   </nav>
-  <div id="Undre_gradient_meny"></div>
+
+  <div id="Undre_gradient_meny"></div> <!--En undre div som är en bakgrundsimage som är linjär gradient bild, denna är för det estetiska utseendet-->
 </header>
 
-<main id="Main_sektion_Search_Movies_page">
-  <img src="Images/Spiderweb.webp" alt="Spindelväv" id="Spindelväv_bild">
-    <section class="Info_text">
+<main id="Main_sektion_Search_Movies_page"> 
+  <img src="Images/Spiderweb.webp" alt="Spindelväv Picture" id="Spindelväv_bild"> <!--En spindelvävs bild som är vid search_movies_page top vänstra hörn-->
+
+    <section id="Search_movies_övre_del_text"> <!--Informerande text med en specialiserad font (Inknut Antiqua)-->
       <p>Search here for your favorite</p>
       <h4>Blumhouse scary Movie</h4>
     </section>
 
-    <section id="Bakgrund_av_sök_fält">
+    <section id="Bakgrund_av_sök_fält"> <!--Detta motsvarar sökältet som -->
         <div>
-             <i class="fa-solid fa-magnifying-glass"></i><input type="text" id="Sök_bar" name="Search_bar" placeholder= "Sök här!">
-             <p class="Sökfält_info_taggar">Results are based on popularity</p>
+             <i class="fa-solid fa-magnifying-glass"></i><input type="text" id="Sök_bar" name="Search_bar" placeholder= "Search here!">
+             <p id="Sökfält_info_tag">Results will show up down here</p>
         </div>
         <div id="Resultat_div"></div>
     </section>
@@ -50,10 +53,10 @@
 <footer>
   <div id="Footer_bakgrund">
     <img src="Images/BlumHouse_logo.png" alt="Blumhouse Production logo" class="Blumhouse_logo" loading="lazy">
-    <div id="Följ_blumhouse_div">
+    <div id="Följ_blumhouse_div"> <!--Div som motsvarar texten som säger följ blumhouse och media ikonernan från fontawesome-->
       <div>Follow Blumhouse productions</div>
       <hr>
-      <nav id="Media_icons_div">
+      <nav id="Media_icons_div"> <!--Länkar som länkar användaren till Blumhouse egna sociala medier-->
         <div class="Media_Länk"> <a class="Media_Länk" href="https://www.instagram.com/blumhouse/"><i class="fa-brands fa-instagram"></i></a> </div> 
         <div class="Media_Länk"> <a class="Media_Länk" href="https://x.com/blumhouse?mx=2"><i class="fa-brands fa-x-twitter"></i></a> </div> 
         <div class="Media_Länk"> <a class="Media_Länk" href="https://www.youtube.com/channel/UCCEfOHkckMXnoZQAjUZsMig"><i class="fa-brands fa-youtube"></i></a> </div> 

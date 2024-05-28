@@ -4,50 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blumhouse Info</title>
+    <link rel="icon" type="image/x-icon" href="Images/Favicon.ico">
     <link rel="stylesheet" href="css/Top_meny.css">
     <link rel="stylesheet" href="css/Footer.css">
     <link rel="stylesheet" href="css/Contact_information_page.css">
     <script src="https://kit.fontawesome.com/92d4fc8020.js" crossorigin="anonymous"></script>  
 </head>
 <body>
+
 <header  id="Top_meny">
-  <div class="centrerad"> <!--Endast centrerard när max-width är under 700-->
+  <div class="centrerad"> <!--Endast centrerard när max-width är under 700px-->
    <img src="Images/BlumHouse_logo.png" alt="Blumhouse Production logo" class="Blumhouse_logo" loading="lazy">
   </div>
-  <div class="Top_meny Meny_länkar">
-    <div id="Home_page_link" class="Övre_länk">
-    <h3>Home</h3>
+
+  <nav class="Top_meny Meny_länkar"> <!--Dessa är divar som används i Top_meny.js för att omdirigera användaren till en annan html fil-->
+    <div id="Home_page_link" class="Övre_länk"> <!--Ansvarar för Home knappen som finns i top meny'n, öppnar Home_page.html-->
+       <h3>Home</h3>
+    </div>
+
+   <div id="Search_movies_page_link" class="Övre_länk"> <!--Ansvarar för Search Movies knappen som finns i top meny'n, öppnar Search_movies_page.html-->
+      <h3>Search</h3>
+      <h3>Movies</h3>
    </div>
-   <div id="Search_movies_page_link" class="Övre_länk">
-    <h3>Search</h3>
-    <h3>Movies</h3>
+
+   <div id="Contact_information_page_link" class="Övre_länk"> <!--Ansvarar för Contact knappen som finns i top meny'n, öppnar Contact_information_page.html-->
+      <h3>Contact</h3>
    </div>
-   <div id="Contact_information_page_link" class="Övre_länk">
-    <h3>Contact</h3>
-    <h3>Information</h3>
-   </div>
-  </div>
- <div id="Undre_gradient_meny"></div>
+  </nav>
+
+  <div id="Undre_gradient_meny"></div> <!--En undre div som är en bakgrundsimage som är linjär gradient bild, denna är för det estetiska utseendet-->
 </header>
 
-<main id="Main_sektion_Contact_information_page" class="Sido_text">
+<main id="Main_sektion_Contact_information_page" class="Sido_text"> <!--Denna del motsvarar det fullständiga kontakt formuläret-->
   <h2>Send an Email</h2>
   <h2>To the Creator of this Page</h2>
-  <form id="contactForm">
-    <label for="namn av sändare">Full Name</label>
+  <form id="contactForm"> <!--Svaren som skickas när submit knappen är tryckt processeras i Contact_information.js. Alla text inputs kräver att användaren har skrivit åtminstone något lämpligt-->
+    <label>Full Name</label>
     <br>
-    <input type="text" placeholder="Your full name.." id="Namn_av_sändare" class="Sido_text" required>
+    <input type="text" placeholder="Your full name.." id="Namn_av_sändare" class="Sido_text input_text" required>
     <br>
-    <label for="Email av sändare">Email</label>
+    <label for="Subject">Email</label>
     <br>
-    <input type="email" placeholder="Your Email.." id="Email_av_sändare" class="Sido_text" required>
+    <input type="email" placeholder="Your email adress.." class="Sido_text input_text" required> <!--Används inte vid skickande av mail, används endast då det ingick i kraven att kontaktformulären behövde använda e-postadress-->
     <br>
-    <label for="Kommentar av sändare">Write a Comment</label>
+    <label for="Subject">Subject</label>
     <br>
-    <textarea cols="40" rows="10" placeholder="Write Something.." id="Text_av_sändare" class="Sido_text" required></textarea>
+    <select name="Subject" id="Ämne_av_sändare" class="Sido_text input_text"> 
+      <option value="Question">Question</option>
+      <option value="Business">Business</option>
+      <option value="Other">Other..</option>
+    </select>
+    <br>
+    <label>Write a Comment</label>
+    <br>
+    <textarea cols="40" rows="10" placeholder="Write Something.." id="Text_av_sändare" class="Sido_text input_text" required></textarea>
     <br>
     <input type="submit" value="Send" class="Sido_text">
-    </form>
   </form>
   
 </main>
@@ -55,10 +67,10 @@
 <footer>
     <div id="Footer_bakgrund">
       <img src="Images/BlumHouse_logo.png" alt="Blumhouse Production logo" class="Blumhouse_logo" loading="lazy">
-      <div id="Följ_blumhouse_div">
+      <div id="Följ_blumhouse_div"> <!--Div som motsvarar texten som säger följ blumhouse och media ikonernan från fontawesome-->
         <div>Follow Blumhouse productions</div>
         <hr>
-        <nav id="Media_icons_div">
+        <nav id="Media_icons_div"> <!--Länkar som länkar användaren till Blumhouse egna sociala medier-->
           <div class="Media_Länk"> <a class="Media_Länk" href="https://www.instagram.com/blumhouse/"><i class="fa-brands fa-instagram"></i></a> </div> 
           <div class="Media_Länk"> <a class="Media_Länk" href="https://x.com/blumhouse?mx=2"><i class="fa-brands fa-x-twitter"></i></a> </div> 
           <div class="Media_Länk"> <a class="Media_Länk" href="https://www.youtube.com/channel/UCCEfOHkckMXnoZQAjUZsMig"><i class="fa-brands fa-youtube"></i></a> </div> 
@@ -67,7 +79,9 @@
       </div>
     </div>
 </footer>
+
 <script src="Top_meny.js"></script>
 <script src="Contact_information.js"></script>
+
 </body>
 </html>

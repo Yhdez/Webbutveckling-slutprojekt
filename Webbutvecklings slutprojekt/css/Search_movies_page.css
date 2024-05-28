@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap'); /*Import av font*/
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap'); /*Import av font Inknut Antiqua*/
 
 #Spindelväv_bild{
     margin-left: -10%;
     margin-top: -10%;
-    filter: brightness(500%);
+    filter: brightness(500%); /*Bilden är egentligen svart men igenom att höja dess ljusstyrka ser bilden vit ut, vilket ser bättre ut i en mörk bakgrund*/
     width:30%;
     float: left;
 }
 
-.Info_text{
+#Search_movies_övre_del_text{ /*den övre delen av sidans main där det finns text som beskriver vad denna del av sidan kan göra*/
     color: white;
     font-family: "Inknut Antiqua", serif;
 }
 
-#Bakgrund_av_sök_fält{
+#Bakgrund_av_sök_fält{ /*Detta är diven som innehåller alla de nedanstående id och klasser tills @media screen*/
     text-align: center;
     background-color: rgb(145, 145, 145);
     padding-top: 1%;
@@ -23,12 +23,12 @@
     box-shadow: 8px 8px;
 }
 
-.Sökfält_info_taggar{
+#Sökfält_info_tag{
     color:  rgb(100, 100, 100);
     font-size: 50%;
 }
 
-.Titlar_resultat{
+.Titlar_resultat{ /**/
     border: 2px solid black;
     margin: 2%;
     padding: 7%;
@@ -67,25 +67,27 @@
    width: 100%;
 }
 
-@media screen and (max-width:500px){
-    .Info_text{font-size: 90%; margin-left: 28%;}
+/*För att texten i denna sida inte ska flöda ut och den är lagom stor för att läsa även när skärmbredden är liten, ändras @media screen*/
+
+@media screen and (max-width:450px){
+    #Search_movies_övre_del_text{font-size: 90%; margin-left: 28%;}
     .Titlar_resultat{font-size: 1.2vw;}
-    .Information_text_om_titel{font-size: 1.5vw;}
+    .Information_text_om_titel{font-size: 1.8vw;}
     #Resultat_bilder{margin-top: -5%; height: 11%; width: 11%;}
     #Main_sektion_Search_Movies_page{margin-bottom: 52%;}
 }
 
 
-@media screen and (min-width:500px){
-    .Info_text{font-size: 90%; margin-left: 28%;}
+@media screen and (min-width:450px){
+    #Search_movies_övre_del_text{font-size: 90%; margin-left: 28%;}
     .Titlar_resultat{font-size: 1.4vw;}
     .Information_text_om_titel{font-size: 1.2vw;}
     #Resultat_bilder{margin-top: -3.5%; height: 13%; width: 13%;}
 }
-
+/*Då min-width:800px kommer efter, kommer den att överskrida de tidigare definerade attributerna, vilket är tänkt för att kunna ha tre stycken @media screen*/
 
 @media screen and (min-width:800px){
-    .Info_text{font-size: 140%; margin-left: 35%;}
+    #Search_movies_övre_del_text{font-size: 140%; margin-left: 35%;}
     .Titlar_resultat{font-size: 1.5vw;}
     .Information_text_om_titel{font-size: 1.2vw;}
     #Resultat_bilder{margin-top: -4.5%;height: 16%; width: 16%;}

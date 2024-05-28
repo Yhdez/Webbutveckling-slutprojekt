@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blumhouse Info</title>
+    <link rel="icon" type="image/x-icon" href="Images/Favicon.ico">
     <link rel="stylesheet" href="css/Top_meny.css">
     <link rel="stylesheet" href="css/Footer.css">
     <link rel="stylesheet" href="css/Home_page.css">
@@ -12,36 +13,55 @@
 <body>
 <header id="Top_meny">
 
-
-  <div class="centrerad"> <!--Endast centrerard när max-width är under 700-->
+  <div class="centrerad"> <!--Endast centrerard när max-width är under 700 för att kunna få en bättre anpassad meny för mobilenheter-->
    <img src="Images/BlumHouse_logo.png" alt="Blumhouse Production logo" class="Blumhouse_logo" loading="lazy">
   </div>
-  <div class="Top_meny Meny_länkar">
-    <div id="Home_page_link" class="Övre_länk">
-    <h3>Home</h3>
+
+  <nav class="Top_meny Meny_länkar"> <!--Dessa är divar som används i Top_meny.js för att omdirigera användaren till en annan html fil-->
+    <div id="Home_page_link" class="Övre_länk"> <!--Ansvarar för Home knappen som finns i top meny'n, öppnar Home_page.html-->
+      <h3>Home</h3>
+    </div>
+
+   <div id="Search_movies_page_link" class="Övre_länk"> <!--Ansvarar för Search Movies knappen som finns i top meny'n, öppnar Search_movies_page.html-->
+      <h3>Search</h3>
+      <h3>Movies</h3>
    </div>
-   <div id="Search_movies_page_link" class="Övre_länk">
-    <h3>Search</h3>
-    <h3>Movies</h3>
+
+   <div id="Contact_information_page_link" class="Övre_länk"> <!--Ansvarar för Contact knappen som finns i top meny'n, öppnar Contact_information_page.html-->
+      <h3>Contact</h3>
    </div>
-   <div id="Contact_information_page_link" class="Övre_länk">
-    <h3>Contact</h3>
-    <h3>Information</h3>
-   </div>
-  </div>
- <div id="Undre_gradient_meny"></div>
+  </nav>
+  
+  <div id="Undre_gradient_meny"></div> <!--En undre div som är en bakgrundsimage som är linjär gradient bild, denna är för det estetiska utseendet-->
 </header>
 
-<main id="Main_sektion_home_page"> 
-  <section  id="Bild_lista">
+<main>
+<section id="Övre_sektion_home_page"> <!--Detta ska motsvara sidans "Hero" då den ger allmänn information om sidan och har en länk till sidans primära del-->
+  <div>
+    <p class="Home_page_liten_text">Alexander Yhde / Blumhouse Productions</p>
+    <h1 class="Home_page_rubrik">Welcome to the #2</h1>
+    <h1 class="Home_page_rubrik">Blumhouse information website</h1>
+    <p class="Home_page_medium_text">Here you can search and see information surrounding</p>
+    <p class="Home_page_medium_text">All of your favorite Blumhouse Movies</p>
+    <button id="Home_page_Search_movies_link" class="Home_page_liten_text">Try Now!</button> <!--Detta är en knapp som används i Home_page.js den omdirigerar användaren, precis som top meny länkarna användaren till en annan html fil i det här fallet Search_movies_page.html-->
+    <br><br><br><br><br><br>
+    <h4 class="Home_page_rubrik">Some of Blumhouse greatest works</h4>
+  </div>
+
+</section>
+
+<section id="Undre_sektion_home_page">
+
+  <div  id="Bild_lista">  <!--Detta motsvarar en lista med blumhouse 3 största filmer och en bild på dem-->
+    <h4 class="Home_page_medium_text">Highest rated movies</h4>
     <ol>
       <li><img src="Images/Get_out_poster.jpg" alt="Movie Poster of Get Out" class="Film_posters" loading="lazy"></li>
       <li><img src="Images/M3GAN_poster.jpg" alt="Movie Poster of M3GAN" class="Film_posters" loading="lazy"></li>
       <li><img src="Images/The_black_phone_poster.jpg" alt="Movie Poster of The Black Phone" class="Film_posters" loading="lazy"></li>
     </ol>
-  </section>
+  </div>
 
-  <section id="Movie_information"> <!--Denna innhåller en tabell med många olika filmer gjorda av blumhouse med deras namn, publiceringsdatum och kritik-->
+  <div id="Movie_information_tabell"> <!--Denna innhåller en tabell med många olika filmer gjorda av blumhouse med deras namn, publiceringsdatum och kritik-->
     <table>
       <thead>
         <tr>
@@ -51,6 +71,21 @@
         </tr>
       </thead>
       <tbody>
+        <tr>
+          <td class="tabell_rad">Get Out</td>
+          <td class="tabell_rad">2017-02-24</td>
+          <td class="tabell_rad">8/10</td>
+        </tr>
+        <tr>
+          <td class="tabell_rad">M3GAN</td>
+          <td class="tabell_rad">2022-12-28</td>
+          <td class="tabell_rad">8/10</td>
+        </tr>
+        <tr>
+          <td class="tabell_rad">The Black Phone</td>
+          <td class="tabell_rad">2022-06-22</td>
+          <td class="tabell_rad">8/10</td>
+        </tr>
         <tr>
           <td class="tabell_rad">Five night's at Freddy's</td>
           <td class="tabell_rad">2023-10-25</td>
@@ -78,21 +113,22 @@
         </tr>
       </tbody>
       <tfoot>
-        <tr class="tabell_rad">
-          <td class="låg_opacity">Mer Kommer!</td>
+        <tr class="tabell_rad"> <!--Den sista raden är speciell detta är med meningen, då enligt kraven så krävs det att den är annorlunda gentemot de andra raderna-->
+          <td class="låg_opacity">More will come!</td>
         </tr>
       </tfoot>
     </table>
-  </section>
+  </div>
+</section> 
 
 </main>
 <footer>
     <div id="Footer_bakgrund">
       <img src="Images/BlumHouse_logo.png" alt="Blumhouse Production logo" class="Blumhouse_logo" loading="lazy">
-      <div id="Följ_blumhouse_div">
+      <div id="Följ_blumhouse_div"> <!--Div som motsvarar texten som säger följ blumhouse och media ikonernan från fontawesome-->
         <div>Follow Blumhouse productions</div>
         <hr>
-        <nav id="Media_icons_div">
+        <nav id="Media_icons_div"> <!--Länkar som länkar användaren till Blumhouse egna sociala medier-->
           <div class="Media_Länk"> <a class="Media_Länk" href="https://www.instagram.com/blumhouse/"><i class="fa-brands fa-instagram"></i></a> </div> 
           <div class="Media_Länk"> <a class="Media_Länk" href="https://x.com/blumhouse?mx=2"><i class="fa-brands fa-x-twitter"></i></a> </div> 
           <div class="Media_Länk"> <a class="Media_Länk" href="https://www.youtube.com/channel/UCCEfOHkckMXnoZQAjUZsMig"><i class="fa-brands fa-youtube"></i></a> </div> 
@@ -101,6 +137,9 @@
       </div>
     </div>
 </footer>
+
+<script src="Home_page.js"></script>
 <script src="Top_meny.js"></script>
+
 </body>
 </html>

@@ -1,34 +1,22 @@
-#Main_sektion_Contact_information_page{
+#Main_sektion_Contact_information_page{ /*Main sektionen av contact_information_page.html detta motsvarar det fullständiga formuläret*/
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(145, 145, 145);
-    margin-right: 28%;
-    margin-left: 28%;
     margin-top: 15%;
     border: 20px solid rgb(145, 145, 145);
     border-radius: 5%;
     box-shadow: 8px 8px;
 }
 
-#Namn_av_sändare{
-    width: 16vw
-}
-
-#Email_av_sändare{
-    width: 16vw;
-}
-
-#Text_av_sändare{
-    width: 16vw;
-    height: 10vw;
-}
+#Text_av_sändare{height: 10vw;}
+.Input_text{width: 16vw}
 
 @media screen and (max-width:950px){
-    .Sido_text{font-size: 60%;}
-    #Main_sektion_Contact_information_page{
-        margin-right: 24%;
-        margin-left: 24%;
+    .Sido_text{font-size: 55%;}
+    #Main_sektion_Contact_information_page{ /*Ändras vid olika skärmstorlek för att se till att input fältet inte flödar ut ur main sektionens bakgrund*/
+        margin-right: 20%;
+        margin-left: 20%;
         padding-bottom: 12%;
     }
 }
@@ -36,8 +24,8 @@
 @media screen and (min-width:950px){
     .Sido_text{font-size: 100%;}
     #Main_sektion_Contact_information_page{
-        margin-right: 32%;
-        margin-left: 32%;
+        margin-right: 28%;
+        margin-left: 28%;
         padding-bottom: 0;
     }
 }
