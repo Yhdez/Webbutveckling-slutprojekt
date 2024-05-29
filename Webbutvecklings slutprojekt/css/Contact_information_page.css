@@ -7,25 +7,34 @@
     border: 20px solid rgb(145, 145, 145);
     border-radius: 5%;
     box-shadow: 8px 8px;
+    padding-bottom: 5%;
 }
 
-#Text_av_sändare{height: 10vw;}
-.Input_text{width: 16vw}
+#Text_av_sändare{height: 10vw;} /*Denna används vid textarea då den behöver en justering vid sin höjd när skärmbredden minskar*/
 
-@media screen and (max-width:950px){
+.Input_text{width: 16vw} /*Denna motsvarar alla inputfälts bredd*/
+
+@media screen and (max-width:550px){
     .Sido_text{font-size: 55%;}
     #Main_sektion_Contact_information_page{ /*Ändras vid olika skärmstorlek för att se till att input fältet inte flödar ut ur main sektionens bakgrund*/
         margin-right: 20%;
         margin-left: 20%;
-        padding-bottom: 12%;
+        margin-bottom: 28%; /*För att säkerhetställa att sidans body tar upp hela skärmens höjd*/
     }
 }
 
-@media screen and (min-width:950px){
+@media screen and (min-width:550px){
+    .Sido_text{font-size: 80%;}
+    #Main_sektion_Contact_information_page{
+        margin-right:24%;
+        margin-left: 24%;
+    }
+}
+
+@media screen and (min-width:800px){
     .Sido_text{font-size: 100%;}
     #Main_sektion_Contact_information_page{
         margin-right: 28%;
         margin-left: 28%;
-        padding-bottom: 0;
     }
 }

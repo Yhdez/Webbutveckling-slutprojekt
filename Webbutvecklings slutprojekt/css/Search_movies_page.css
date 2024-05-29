@@ -28,7 +28,7 @@
     font-size: 50%;
 }
 
-.Titlar_resultat{ /**/
+.Titlar_resultat{ /*De individuella divarna som motsvarar resultaten som visas när användaren använder sök baren*/
     border: 2px solid black;
     margin: 2%;
     padding: 7%;
@@ -42,46 +42,44 @@
 }
 
 
-#Resultat_bilder{
+#Resultat_bilder{ /*De individuella bilderna vid varje div som visas när användaren använder sök baren*/
     margin-bottom: -10%;
     margin-left: -2%;
-    border: 0.5px black solid;
-    white-space: pre;
+    border: 1px black solid;
 }
 
-#Information_bild_bredvid_text{
-    width: 70%;
-    left: 10%;
-    margin: 5%;
-    border: 1px;
-}
-
-#Information_om_titel_bakgrund{
+#Information_om_titel_bakgrund{ /*Fullständiga diven som motsvarar både bilden och texten när användaren trycker på en bestämd titel*/
     margin-top: 5%;
     background-color: rgb(159, 159, 159);
     display: flex;
 }
 
-.Information_text_om_titel{
+#Information_bild_bredvid_text{ /*Denna ansvarar för attributerna för bilden när en titel är tryckt*/
+    width: 70%;
+    left: 10%;
+    margin: 5%;
+}
+
+#Information_text_om_titel{ /*Div som ansvarar för attributerna för texten vid bildens sida när en titel är tryckt*/
    margin-right: 20%;
    width: 100%;
 }
 
-/*För att texten i denna sida inte ska flöda ut och den är lagom stor för att läsa även när skärmbredden är liten, ändras @media screen*/
+/*För att texten i denna sida inte ska flöda ut och den är lagom stor för att läsa även när skärmbredden är liten, ändras @media screen vid tre tilfällen*/
 
 @media screen and (max-width:450px){
-    #Search_movies_övre_del_text{font-size: 90%; margin-left: 28%;}
+    #Search_movies_övre_del_text{font-size: 90%; margin-left: 24%;}
     .Titlar_resultat{font-size: 1.2vw;}
-    .Information_text_om_titel{font-size: 1.8vw;}
-    #Resultat_bilder{margin-top: -5%; height: 11%; width: 11%;}
-    #Main_sektion_Search_Movies_page{margin-bottom: 52%;}
+    #Information_text_om_titel{font-size: 1.8vw;}
+    #Resultat_bilder{margin-top: -3%; height: 11%; width: 11%;}
+    #Main_sektion_Search_Movies_page{margin-bottom: 64%;} /*För att see till att sidan tar upp hela skärmens höjd behöver main vara lite större än den borde vara när skärmbredden är liten*/
 }
 
 
 @media screen and (min-width:450px){
     #Search_movies_övre_del_text{font-size: 90%; margin-left: 28%;}
     .Titlar_resultat{font-size: 1.4vw;}
-    .Information_text_om_titel{font-size: 1.2vw;}
+    #Information_text_om_titel{font-size: 1.2vw;}
     #Resultat_bilder{margin-top: -3.5%; height: 13%; width: 13%;}
 }
 /*Då min-width:800px kommer efter, kommer den att överskrida de tidigare definerade attributerna, vilket är tänkt för att kunna ha tre stycken @media screen*/
@@ -89,6 +87,6 @@
 @media screen and (min-width:800px){
     #Search_movies_övre_del_text{font-size: 140%; margin-left: 35%;}
     .Titlar_resultat{font-size: 1.5vw;}
-    .Information_text_om_titel{font-size: 1.2vw;}
-    #Resultat_bilder{margin-top: -4.5%;height: 16%; width: 16%;}
+    #Information_text_om_titel{font-size: 1.2vw;}
+    #Resultat_bilder{margin-top: -4.5%; height: 16%; width: 16%;}
 }

@@ -1,4 +1,3 @@
-
 body{ /*Detta är sidans fullständiga body, då top_meny.css är aktiv för alla html filer används dessa attributer på alla sidor*/
     background-image: linear-gradient( rgb(44, 44, 44),rgb(39, 39, 39),rgb(51, 39, 39), rgb(93, 54, 54));
     margin: 0; /*För att se till att både footern och headern täcker hela bredden av fönstret*/
@@ -23,7 +22,7 @@ body{ /*Detta är sidans fullständiga body, då top_meny.css är aktiv för all
     height: 15svh;
 }
 
-/*Dessa id är top menyns individuella id som ger specifika attributer till de enstaka*/
+/*Dessa id är top menyns individuella id som ger specifika attributer till de enstaka länkarna*/
 #Home_page_link{
     padding-top: 2%;
     padding-left: 8%;
@@ -59,7 +58,7 @@ body{ /*Detta är sidans fullständiga body, då top_meny.css är aktiv för all
     to {background-color:  rgb(125, 125, 125);transform: scale(1.08)}
 }
 
-@media screen and (min-width:700px){ /*När skrämbredden är över 700px*/
+@media screen and (min-width:700px){
     .Blumhouse_logo{
         width: 25%;
         height:15%;
@@ -74,7 +73,7 @@ body{ /*Detta är sidans fullständiga body, då top_meny.css är aktiv för all
     
 }   
 
-@media screen and (max-width:700px){ /*När skrämbredden är under 700px*/
+@media screen and (max-width:700px){
     .Blumhouse_logo{
         width: 30%;
         height:10%;

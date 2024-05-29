@@ -21,15 +21,13 @@
     <div id="Home_page_link" class="Övre_länk"> <!--Ansvarar för Home knappen som finns i top meny'n, öppnar Home_page.html-->
        <h3>Home</h3>
     </div>
-
-   <div id="Search_movies_page_link" class="Övre_länk"> <!--Ansvarar för Search Movies knappen som finns i top meny'n, öppnar Search_movies_page.html-->
+    <div id="Search_movies_page_link" class="Övre_länk"> <!--Ansvarar för Search Movies knappen som finns i top meny'n, öppnar Search_movies_page.html-->
       <h3>Search</h3>
       <h3>Movies</h3>
-   </div>
-
-   <div id="Contact_information_page_link" class="Övre_länk"> <!--Ansvarar för Contact knappen som finns i top meny'n, öppnar Contact_information_page.html-->
+    </div>
+    <div id="Contact_information_page_link" class="Övre_länk"> <!--Ansvarar för Contact knappen som finns i top meny'n, öppnar Contact_information_page.html-->
       <h3>Contact</h3>
-   </div>
+    </div>
   </nav>
 
   <div id="Undre_gradient_meny"></div> <!--En undre div som är en bakgrundsimage som är linjär gradient bild, denna är för det estetiska utseendet-->
@@ -41,13 +39,13 @@
   <form id="contactForm"> <!--Svaren som skickas när submit knappen är tryckt processeras i Contact_information.js. Alla text inputs kräver att användaren har skrivit åtminstone något lämpligt-->
     <label>Full Name</label>
     <br>
-    <input type="text" placeholder="Your full name.." id="Namn_av_sändare" class="Sido_text input_text" required>
+    <input type="text" placeholder="Your full name.." id="Namn_av_sändare" class="Sido_text input_text" >
     <br>
-    <label for="Subject">Email</label>
+    <label>Email</label>
     <br>
-    <input type="email" placeholder="Your email adress.." class="Sido_text input_text" required> <!--Används inte vid skickande av mail, används endast då det ingick i kraven att kontaktformulären behövde använda e-postadress-->
+    <input type="email" placeholder="Your email adress.." id="Email_av_sändare" class="Sido_text input_text"> <!--Används inte vid skickande av mail, används endast då det ingick i kraven att kontaktformulären behövde använda e-postadress-->
     <br>
-    <label for="Subject">Subject</label>
+    <label>Subject</label>
     <br>
     <select name="Subject" id="Ämne_av_sändare" class="Sido_text input_text"> 
       <option value="Question">Question</option>
@@ -57,7 +55,7 @@
     <br>
     <label>Write a Comment</label>
     <br>
-    <textarea cols="40" rows="10" placeholder="Write Something.." id="Text_av_sändare" class="Sido_text input_text" required></textarea>
+    <textarea cols="40" rows="10" placeholder="Write Something.." id="Text_av_sändare" class="Sido_text input_text" ></textarea>
     <br>
     <input type="submit" value="Send" class="Sido_text">
   </form>

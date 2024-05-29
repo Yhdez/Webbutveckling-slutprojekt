@@ -13,7 +13,7 @@
 #Home_page_Search_movies_link{ /*Denna motsvarar Home_page knappen som omdirigerar användaren till Search_movies.html*/
     width: 14%;
     height: 10%;
-    background-color:  rgb(106, 50, 50);
+    background-color:  rgb(159, 32, 32);
     border-radius: 25%;
     text-decoration: none;
     color: white;
@@ -22,11 +22,11 @@
 
 #Home_page_Search_movies_link:hover{
     transform: scale(1.05);
-    background-color: brown;
+    background-color: rgb(112, 30, 30);
     cursor: pointer;
 }
 
-/*Dessa klasser motsvarar olika storlekar och attributer som olika delar av Home_page behöver ha, mest uttnyjtas detta i "Hero" delen (Övre_sektionen*/
+/*Dessa undre klasser motsvarar olika storlekar och attributer som olika delar av Home_page behöver ha, mest uttnyjtas detta i "Hero" delen (Övre_sektionen)*/
 
 .Home_page_rubrik{
     font-size: 5vw;
@@ -59,8 +59,9 @@
     border-radius: 20%;
 }
 
-.tabell_rad{
-    outline: 2px solid black;
+.tabell_rad{ 
+    outline: 2px solid black; /*Varje del av tabellen har en outline istället för border för att efterlikna en verklig tabell*/
+    text-wrap: nowrap; /*Ser till att inte texten i tabellen byter rad*/
 }
 
 #Movie_information_tabell{

@@ -39,6 +39,6 @@ hr{ /*Detta är för att göra linjen svart istället för den orginella färgen
         margin-top: 3.5%;
         margin-left: 15%;
     }
-    #Media_icons_div{font-size: 5svw;} /*Då media ikonerna behöver att kunna vara klickbara vid låg skärmbredd har de en hög font-size*/
+    #Media_icons_div{font-size: 5svw;} /*Då media ikonerna behöver att kunna vara klickbara vid låg skärmbredd har de en hög font-size när skärmbredden är låg*/
     
 }
